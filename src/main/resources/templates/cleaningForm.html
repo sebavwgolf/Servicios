@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpieza Doméstica</title>
+    <link rel="stylesheet" href="../static/css/cleaningForm.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Licorice&family=Pushster&family=Quicksand:wght@300&family=Spline+Sans:wght@300&display=swap" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/83a37f8406.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Limpieza Doméstica </h1>
+            <!-- <img src="../static/img/Limpieza/limp17.jpg" alt="images" width="300" />-->
+            <form class="formato" action="/cleaningForm" method="POST">
+                <div>
+                    <label class="titulo" for="salario"></label>
+                    <input class="input font" type="text" size="50px" name="salary" id="salario"
+                        placeholder="Remuneración Pretendida">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="titulo" for="zona"> </label>
+                    <select class="input" name="workingZone" id="zona">
+                        <option value="Zona Laboral">Zona Laboral </option>
+                        <option value="Capital">Capital </option>
+                        <option value="General Alvear">General Alvear </option>
+                        <option value="San Martín">San Martín </option>
+                        <option value="Godoy Cruz">Godoy Cruz </option>
+                        <option value="Guaymallén">Guaymallén </option>
+                        <option value="Junín">Junín </option>
+                        <option value="La Paz">La Paz </option>
+                        <option value="Las Heras">Las Heras </option>
+                        <option value="Lavalle">Lavalle</option>
+                        <option value="Luján de Cuyo">Luján de Cuyo</option>
+                        <option value="Maipú">Maipú</option>
+                        <option value="Malargüe">Malargüe </option>
+                        <option value="Rivadavia">Rivadavia </option>
+                        <option value="San Carlos">San Carlos </option>
+                        <option value="San Rafael">San Rafael </option>
+                        <option value="Santa Rosa">Santa Rosa </option>
+                        <option value="Tunuyán">Tunuyán </option>
+                        <option value="Tupungato">Tupungato </option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div class="btn-group">
+                    <label class="input" for="dias"></label>
+                    <p class="parrafo"> Días Laborales </p>
+                    <ul class="dropdown-menu" id="myDiv">
+                        <li>
+                            <input type="checkbox" value="Lunes"> Lunes
+                        <li>
+                            <input type="checkbox" value="Martes"> Martes
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Miércoles"> Miércoles
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Jueves"> Jueves
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Viernes"> Viernes
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Sábado"> Sábado
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Domingo"> Domingo
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="titulo" for="hora"></label>
+                    <input class="input font" type="text" name="timeFrom" id="hora" placeholder="Hora de incio"
+                        onfocus="(this.type='time')">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="titulo" for="hora"></label>
+                    <input class="input font" type="text" id="hora" name="timeTo" placeholder="Hora de finalización"
+                        onfocus="(this.type='time')">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label for="cantidad de habitaciones"></label>
+                    <input class="input font" type="number" name="rooms" id="cantidad de habitaciones" placeholder="Cantidad de habitaciones">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="Sectores"></label>
+                    <select class="input" name="exteriors" id="Sectores">
+                        <option value="sectores">Sectores de la vivienda </option>
+                        <option value="adentro">Adentro </option>
+                        <option value="afuera">Afuera </option>
+                        <option value="ambas">Ambas </option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="cocina"> </label>
+                    <p class="parrafo"> Servicio de cocina?</p>
+                    <ul class="dropdown-menu" id="cocina">
+                        <li>
+                            <input type="checkbox" value="Si"> Si
+                        </li>
+                        <li>
+                            <input type="checkbox" value="No"> No
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="lavado"></label>
+                    <p class="parrafo"> Servicio de lavado de ropa? </p>
+                    <ul class="dropdown-menu" id="lavado">
+                        <li>
+                            <input type="checkbox" value="Si"> Si
+                        </li>
+                        <li>
+                            <input type="checkbox" value="No"> No
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="planchado"></label>
+                    <p class="parrafo"> Servicio de planchado? </p>
+                    <ul class="dropdown-menu" id="planchado">
+                        <li>
+                            <input type="checkbox" value="Si"> Si
+                        </li>
+                        <li>
+                            <input type="checkbox" value="No"> No
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <button class="buttons"> Enviar </button>
+            </form>
+            <a class="volver" href="">volver</a>
+        </div>
+        <div class="relleno">
+
+        </div>
+</body>
+
+</html>

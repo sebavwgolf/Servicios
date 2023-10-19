@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuidado de personas</title>
+    <link rel="stylesheet" href="../static/css/list.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Licorice&family=Pushster&family=Quicksand:wght@300&family=Spline+Sans:wght@300&display=swap" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/83a37f8406.js" crossorigin="anonymous"></script>
+    <!--Thymeleaf-->
+    <link rel="stylesheet" type="text/css" media="all" href="../../css/gtvg.css" data-th-href="@{..}" />
+
+</head>
+
+<body>
+    <main>
+        <nav class="nav-main">
+            <h1>Cuidado de personas</h1>
+        </nav>
+        <div class="container">
+
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Nombre y apellido</th>
+                            <th>Telefono</th>
+                            <th>Salario</th>
+                            <th>Zona Laboral</th>
+                            <th>Edades a cuidar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Foto</td>
+                            <td>Juan Peréz</td>
+                            <td>261728392</td>
+                            <td>$3000</td>
+                            <td>capital</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Foto</td>
+                            <td>Juan Peréz</td>
+                            <td>261728392</td>
+                            <td>$3000</td>
+                            <td>san rafael</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Foto</td>
+                            <td>Juan Peréz</td>
+                            <td>261728392</td>
+                            <td>$3000</td>
+                            <td>Maipú</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Foto</td>
+                            <td>Juan Peréz</td>
+                            <td>261728392</td>
+                            <td>$3000</td>
+                            <td>Lujan de Cuyo</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Foto</td>
+                            <td>Juan Peréz</td>
+                            <td>261728392</td>
+                            <td>$3000</td>
+                            <td>Guaymallen</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Foto</td>
+                            <td>Juan Peréz</td>
+                            <td>261728392</td>
+                            <td>$3000</td>
+                            <td>Tunuyán</td>
+                            <td>60</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+    </main>
+</body>
+
+</html>
+
+<!-- 
+     <table style="margin-top: 100px;">
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Telefono</th>
+                            <th>Alta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <p th:if="${autor.isEmpty}">No hay autores para mostrar</p>
+                        <tr th:each="u,iterator : ${user}">
+                            <td th:text="${iterator.index+1"></td>
+                            <td th:text="${u.photo}"></td>
+                            <td th:text="${u.firstName} + ${u.lastName}"></td>
+                            <td th:text="${u.phone}"></td>
+                            <td th:text="${u.jobs.salary}"></td>
+                            <td th:text="${u.jobs.rooms}"></td>
+                            <td th:text="${u.jobs.workingZone}"></td>
+                             <td th:text="${u.jobs.exteriors}"></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table> -->
+
+
+
+<!-- <div class="postingCardInfo">
+        <div class="postingCardTop">
+            <div class="postingPillsPosting">
+            </div>
+            <div class="postingCardRow postingCardRowPriceLocation go-to-posting">
+                <div class="postingCardPriceBlock">
+                    <div class=" postingCardPrices  go-to-posting" data-qa="precio">
+                        <span data-price="USD 1" class="firstPrice">
+                            Ars $400,00
+                        </span>
+                        <span class=" postingCardNombre  " data-qa="Nombre">
+                            Samanta
+                        </span>
+                    </div>
+                </div>
+                <div class="postingCardLocationBlock go-to-posting">
+                    <span class=" postingCardLocation  go-to-posting" data-qa="ubicacion">
+                        <span>Mendoza, Ciudad</span>
+                    </span>
+                </div>
+            </div>
+            <div class="postingCardRow postingCardMainFeaturesBlock go-to-posting">
+                <ul class=" postingCardMainFeatures  go-to-posting" data-qa="features">
+                    <li>
+                        <i class="postingCardIconsFeatures iconQuantity"></i>
+                        Cantidad de personas a cuidar
+                    </li>
+                    <li>
+                        <i class="postingCardIconsFeatures iconAgeRanger"></i>
+                        Edad del/los paciente/s?
+                    </li>
+                    <li>
+                        <i class="postingCardIconsFeatures iconCooking"></i>
+                        Debe cocinar? Sí o no
+                    </li>
+                    <li>
+                        <i class="postingCardIconsFeatures iconCleaningPeople"></i>
+                        Debe asear a la persona? Sí o no 
+                    </li>
+                    <li>
+                         <i class="postingCardIconsFeatures iconTranferring"></i>
+                        Incluye traslado? Sí o no
+                    </li>
+                </ul>
+            </div>
+            <div class="postingCardRow">
+
+                <h2 class="postingCardTitle" data-qa="titulo">
+                    <h3>Samanta cuidando personas</h3>
+                    <div class="resolucion">
+                        <img src="../static/img/Cuidador/c6.jpg" alt="images" width="380px" height="450px"/>
+                        <img src="../static/img/Cuidador/c1.jpg" alt="images" width="380px" height="450px"/>
+                        <img src="../static/img/Cuidador/c10.jpg" alt="images" width="380px" height="450px"/>
+                    </div>
+                </h2>
+            </div>
+            <div class="postingCardRow postingCardDescription go-to-posting" data-qa="descripcion">
+                Descripcion escrita por Samanta; se solicita personal para cuidar a un adulto de 60 años.
+                No incluye aseo.
+                El pago es de $400 la hora.
+            </div>
+        </div>
+        <br>
+        <div class="postingCardInfo">
+            <div class="postingCardTop">
+                <div class="postingPillsPosting">
+                </div>
+                <div class="postingCardRow postingCardRowPriceLocation go-to-posting">
+                    <div class="postingCardPriceBlock">
+                        <div class=" postingCardPrices  go-to-posting" data-qa="precio">
+                            <span data-price="USD 1" class="firstPrice">
+                                Ars $400,00
+                            </span>
+                            <span class=" postingCardNombre  " data-qa="Nombre">
+                                Samanta
+                            </span>
+                        </div>
+                    </div>
+                    <div class="postingCardLocationBlock go-to-posting">
+                        <span class=" postingCardLocation  go-to-posting" data-qa="ubicacion">
+                            <span>Mendoza, Ciudad</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="postingCardRow postingCardMainFeaturesBlock go-to-posting">
+                    <ul class=" postingCardMainFeatures  go-to-posting" data-qa="features">
+                        <li>
+                            <i class="postingCardIconsFeatures iconQuantity"></i>
+                            Cantidad de personas a cuidar
+                        </li>
+                        <li>
+                            <i class="postingCardIconsFeatures iconAgeRanger"></i>
+                            Edad del/los paciente/s?
+                        </li>
+                        <li>
+                            <i class="postingCardIconsFeatures iconCooking"></i>
+                            Debe cocinar? Sí o no
+                        </li>
+                        <li>
+                            <i class="postingCardIconsFeatures iconCleaningPeople"></i>
+                            Debe asear a la persona? Sí o no 
+                        </li>
+                        <li>
+                             <i class="postingCardIconsFeatures iconTranferring"></i>
+                            Incluye traslado? Sí o no
+                        </li>
+                    </ul>
+                </div>
+                <div class="postingCardRow">
+    
+                    <h2 class="postingCardTitle" data-qa="titulo">
+                        <h3>Samanta cuidando personas</h3>
+                        <div class="resolucion">
+                            <img src="../static/img/Cuidador/c3.jpg" alt="images" width="380px" height="450px"/>
+                            <img src="../static/img/Cuidador/c8.jpg" alt="images" width="380px" height="450px"/>
+                            <img src="../static/img/Cuidador/c9.jpg" alt="images" width="380px" height="450px"/>
+                        </div>
+                    </h2>
+                </div>
+                <div class="postingCardRow postingCardDescription go-to-posting" data-qa="descripcion">
+                    Descripcion escrita por Samanta; se solicita personal para cuidar a un adulto de 60 años.
+                    No incluye aseo.
+                    El pago es de $400 la hora.
+                </div>
+            </div>
+            <br>
+            <div class="postingCardInfo">
+                <div class="postingCardTop">
+                    <div class="postingPillsPosting">
+                    </div>
+                    <div class="postingCardRow postingCardRowPriceLocation go-to-posting">
+                        <div class="postingCardPriceBlock">
+                            <div class=" postingCardPrices  go-to-posting" data-qa="precio">
+                                <span data-price="USD 1" class="firstPrice">
+                                    Ars $400,00
+                                </span>
+                                <span class=" postingCardNombre  " data-qa="Nombre">
+                                    Samanta
+                                </span>
+                            </div>
+                        </div>
+                        <div class="postingCardLocationBlock go-to-posting">
+                            <span class=" postingCardLocation  go-to-posting" data-qa="ubicacion">
+                                <span>Mendoza, Ciudad</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="postingCardRow postingCardMainFeaturesBlock go-to-posting">
+                        <ul class=" postingCardMainFeatures  go-to-posting" data-qa="features">
+                            <li>
+                                <i class="postingCardIconsFeatures iconQuantity"></i>
+                                Cantidad de personas a cuidar
+                            </li>
+                            <li>
+                                <i class="postingCardIconsFeatures iconAgeRanger"></i>
+                                Edad del/los paciente/s?
+                            </li>
+                            <li>
+                                <i class="postingCardIconsFeatures iconCooking"></i>
+                                Debe cocinar? Sí o no
+                            </li>
+                            <li>
+                                <i class="postingCardIconsFeatures iconCleaningPeople"></i>
+                                Debe asear a la persona? Sí o no 
+                            </li>
+                            <li>
+                                 <i class="postingCardIconsFeatures iconTranferring"></i>
+                                Incluye traslado? Sí o no
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="postingCardRow">
+        
+                        <h2 class="postingCardTitle" data-qa="titulo">
+                            <h3>Samanta cuidando personas</h3>
+                            <div class="resolucion">
+                                <img src="../static/img/Cuidador/c4.jpg" alt="images" width="380px" height="450px"/>
+                                <img src="../static/img/Cuidador/c5.jpg" alt="images" width="380px" height="450px"/>
+                                <img src="../static/img/Cuidador/c11.jpg" alt="images" width="380px" height="450px"/>
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="postingCardRow postingCardDescription go-to-posting" data-qa="descripcion">
+                        Descripcion escrita por Samanta; se solicita personal para cuidar a un adulto de 60 años.
+                        No incluye aseo.
+                        El pago es de $400 la hora.
+                    </div>
+                </div>
+                <br>
+                 -->
+
+
+<!-- <table class="table">
+                    <th>Foto</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Teléfono</th>
+                </table>
+            </div>
+            <div class="tarjetas">
+                <div class="hola">
+                    <h4 id="firstName">Nombre y Apellido</h4><br>
+                    <img src="../static/img/jardin.jpg" alt="imagen" />
+                    <p>
+                    </p>
+                    <a href="gardener.html">Ver más</a>
+                </div>
+                <div class="hola">
+                    <img src="../static/img/Cuidador/c1.jpg" alt="imagen" />
+                    <h4>Cuidado de personas</h4>
+                    <p>
+                    </p>
+                    <a href="caregiver.html">Ver más</a>
+                </div>
+                <div class="hola">
+                    <img src="../static/img/Limpieza/limp5(2).jpg" alt="imagen" />
+                    <h4>Limpieza de hogares</h4>
+                    <p>
+                    </p>
+                    <a href="cleaning.html">Ver más</a>
+                </div>
+                <div class="hola">
+                    <img src="../static/img/Paseador/p10.jpg" alt="imagen" />
+                    <h4>Paseador de mascotas</h4>
+                    <p>
+                    </p>
+                    <a href="petwalker.html">Ver más</a>
+                </div>
+            </div> -->

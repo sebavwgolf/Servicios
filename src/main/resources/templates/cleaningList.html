@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpieza Doméstica</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Licorice&family=Pushster&family=Quicksand:wght@300&family=Spline+Sans:wght@300&display=swap" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/83a37f8406.js" crossorigin="anonymous"></script>
+    <!--Thymeleaf-->
+    <link rel="stylesheet" type="text/css" media="all" href="../../css/gtvg.css" data-th-href="@{..}" />
+</head>
+
+<body>
+    <main>
+        <nav class="nav-main">
+            <h1>Limpieza Doméstica</h1>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#main">Inicio <i class="fas fa-home"></i></a>
+                </li>
+                <li>
+                    <a href="#aboutus">Sobre nosotros <i class="fas fa-users"></i></a>
+                </li>
+                <li>
+                    <a href="#contact">Contacto <i class="far fa-address-card"></i></a>
+                </li>
+                <div class="work-menu">
+                    <li>
+                        <!--deberia llevar a un form lista desplegable con los registros-->
+                        <a href="#form">Quiero trabajar <i class="fas fa-briefcase"></i></a>
+                        <ul class="work-menu">
+                            <li><a href="">Jardinero</a></li>
+                            <li><a href="">Servicio doméstico</a></li>
+                            <li><a href="">Cuidado de personas</a></li>
+                            <li><a href="">Paseador de perros</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="work-menu">
+                    <li>
+                        <!--deberia llevar a un form lista desplegable con los registros-->
+                        <a href="#form">Sección usuarios <i class="far fa-user"></i></a>
+                        <ul class="work-menu">
+                            <li><a href="../templates/login.html">Iniciar sesion <i class="fas fa-sign-in-alt"></i></a>
+                            </li>
+                            <li><a href="../templates/registry.html">Regístrate <i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <div class="table-container">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busqueda Central" title="Busqueda Rapida" class="form-control">
+            <table id="myTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Nombre y apellido</th>
+                        <th>Telefono</th>
+                        <th>Salario</th>
+                        <th>Zona Laboral</th>
+                        <th>Cantidad de habitaciones</th>
+                        <th>Limpieza de exteriores?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Foto</td>
+                        <td>Juan Peréz</td>
+                        <td>261728392</td>
+                        <td>$3000</td>
+                        <td>Malargüe</td>
+                        <td>4</td>
+                        <td>si</td>
+                    </tr>
+                    <tr>
+                        <td>Foto</td>
+                        <td>Juan Peréz</td>
+                        <td>261728392</td>
+                        <td>$3000</td>
+                        <td>Guaymallen</td>
+                        <td>10</td>
+                        <td>no</td>
+                    </tr>
+                    <tr>
+                        <td>Foto</td>
+                        <td>Juan Peréz</td>
+                        <td>261728392</td>
+                        <td>$3000</td>
+                        <td>capital</td>
+                        <td>1</td>
+                        <td>no</td>
+                    </tr>
+                    <tr>
+                        <td>Foto</td>
+                        <td>Juan Peréz</td>
+                        <td>261728392</td>
+                        <td>$3000</td>
+                        <td>capital</td>
+                        <td>80</td>
+                        <td>si</td>
+                    </tr>
+                    <tr>
+                        <td>Foto</td>
+                        <td>Juan Peréz</td>
+                        <td>261728392</td>
+                        <td>$3000</td>
+                        <td>Godoy Cruz</td>
+                        <td>10</td>
+                        <td>si</td>
+                    </tr>
+                    <tr>
+                        <td>Foto</td>
+                        <td>Juan Peréz</td>
+                        <td>261728392</td>
+                        <td>$3000</td>
+                        <td>Godoy Cruz</td>
+                        <td>60</td>
+                        <td>no</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <!-- <footer class="footer">
+        <h3 class="h3bis">Ayuda en casa&copy;</h3>
+        <p>Todos los derechos reservados</p>
+    </footer> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+ 
+</body>
+
+</html>
+
+
+<!-- <table style="margin-top: 100px;">
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Telefono</th>
+                            <th>Alta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <p th:if="${autor.isEmpty}">No hay autores para mostrar</p>
+                        <tr th:each="u,iterator : ${user}">
+                            <td th:text="${iterator.index+1"></td>
+                            <td th:text="${u.photo}"></td>
+                            <td th:text="${u.firstName} + ${u.lastName}"></td>
+                            <td th:text="${u.phone}"></td>
+                            <td th:text="${u.jobs.salary}"></td>
+                            <td th:text="${u.jobs.workingZone}"></td>
+                            <td th:text="${u.jobs.rooms}"></td>
+                             <td th:text="${u.jobs.exteriors}"></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table> -->
+
+
+
+
+<!-- <div class="postingCardInfo">
+        <div class="postingCardTop">
+            <div class="postingPillsPosting">
+            </div>
+            <div class="postingCardRow postingCardRowPriceLocation go-to-posting">
+                <div class="postingCardPriceBlock">
+                    <div class=" postingCardPrices  go-to-posting" data-qa="precio">
+                        <span data-price="USD 1" class="firstPrice">
+                            Ars $400,00
+                        </span>
+                        <span class=" postingCardNombre  " data-qa="Nombre">
+                            María
+                        </span>
+                    </div>
+                </div>
+                <div class="postingCardLocationBlock go-to-posting">
+                    <span class=" postingCardLocation  go-to-posting" data-qa="ubicacion">
+                        <span>Mendoza, Ciudad</span>
+                    </span>
+                </div>
+            </div>
+            <div class="postingCardRow postingCardMainFeaturesBlock go-to-posting">
+                <ul class=" postingCardMainFeatures  go-to-posting" data-qa="features">
+                    <li>
+                        <i class="postingCardIconsFeatures iconRooms"></i>
+                        4 habitaciones, 1 living
+                    </li>
+                    <li>
+                        <i class="postingCardIconsFeatures iconExteriors"></i>
+                        Posee patio? Sí o No
+                    </li>
+                    <li>
+                        <i class="postingCardIconsFeatures iconCooking"></i>
+                        Debe cocinar? Sí o no
+                    </li>
+                    <li>
+                        <i class="postingCardIconsFeatures iconLaundry"></i>
+                        Debe lavar ropa? Sí o no
+                    </li>
+                    <li>
+                        <i class="postingCardIconsFeatures iconLaundry"></i>
+                        Debe planchar? Sí o no
+                    </li>
+                </ul>
+            </div>
+            <div class="postingCardRow">
+
+                <h2 class="postingCardTitle" data-qa="titulo">
+                    <h3>María limpiando</h3>
+                    <div>
+                        <img src="../static/img/Limpieza/limp1.jpg" alt="images" width="380px" height="450px"/>
+                        <img src="../static/img//Limpieza/limp8.jpg" alt="images" width="380px" height="450px"/>
+                        <img src="../static/img/Limpieza/limp3.jpg" alt="images" width="380px" height="450px"/>
+                    </div>
+                </h2>
+            </div>
+            <div class="postingCardRow postingCardDescription go-to-posting" data-qa="descripcion">
+                Descripcion escrita por María; se solicita personal capaz de asear la casa, preferentemente de jornada
+                completa. La limpieza incluye el aseo completo
+                del hogar, planchado y almuerzo.
+                El pago es de $400 la hora.
+            </div>
+        </div>
+        <br>
+        <div class="postingCardInfo">
+            <div class="postingCardTop">
+                <div class="postingPillsPosting">
+                </div>
+                <div class="postingCardRow postingCardRowPriceLocation go-to-posting">
+                    <div class="postingCardPriceBlock">
+                        <div class=" postingCardPrices  go-to-posting" data-qa="precio">
+                            <span data-price="USD 1" class="firstPrice">
+                                Ars $400,00
+                            </span>
+                            <span class=" postingCardNombre  " data-qa="Nombre">
+                                María
+                            </span>
+                        </div>
+                    </div>
+                    <div class="postingCardLocationBlock go-to-posting">
+                        <span class=" postingCardLocation  go-to-posting" data-qa="ubicacion">
+                            <span>Mendoza, Ciudad</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="postingCardRow postingCardMainFeaturesBlock go-to-posting">
+                    <ul class=" postingCardMainFeatures  go-to-posting" data-qa="features">
+                        <li>
+                            <i class="postingCardIconsFeatures iconRooms"></i>
+                            4 habitaciones, 1 living
+                        </li>
+                        <li>
+                            <i class="postingCardIconsFeatures iconExteriors"></i>
+                            Posee patio? Sí o No
+                        </li>
+                        <li>
+                            <i class="postingCardIconsFeatures iconCooking"></i>
+                            Debe cocinar? Sí o no
+                        </li>
+                        <li>
+                            <i class="postingCardIconsFeatures iconLaundry"></i>
+                            Debe lavar ropa? Sí o no
+                        </li>
+                        <li>
+                            <i class="postingCardIconsFeatures iconLaundry"></i>
+                            Debe planchar? Sí o no
+                        </li>
+                    </ul>
+                </div>
+                <div class="postingCardRow">
+
+                    <h2 class="postingCardTitle" data-qa="titulo">
+                        <h3>María limpiando</h3>
+                        <div class="resolucion">
+                            <img src="../static/img/Limpieza/limp5.jpg" alt="images" width="380px" height="450px"/>
+                            <img src="../static/img//Limpieza/limp6.jpg" alt="images" width="380px" height="450px"/>
+                            <img src="../static/img/Limpieza/limp9.jpg" alt="images" width="380px" height="450px"/>
+                        </div>
+                    </h2>
+                </div>
+                <div class="postingCardRow postingCardDescription go-to-posting" data-qa="descripcion">
+                    Descripcion escrita por María; se solicita personal capaz de asear la casa, preferentemente de
+                    jornada
+                    completa. La limpieza incluye el aseo completo
+                    del hogar, planchado y almuerzo.
+                    El pago es de $400 la hora.
+                </div>
+            </div>
+            <br>
+            <div class="postingCardInfo">
+                <div class="postingCardTop">
+                    <div class="postingPillsPosting">
+                    </div>
+                    <div class="postingCardRow postingCardRowPriceLocation go-to-posting">
+                        <div class="postingCardPriceBlock">
+                            <div class=" postingCardPrices  go-to-posting" data-qa="precio">
+                                <span data-price="USD 1" class="firstPrice">
+                                    Ars $400,00
+                                </span>
+                                <span class=" postingCardNombre  " data-qa="Nombre">
+                                    María
+                                </span>
+                            </div>
+                        </div>
+                        <div class="postingCardLocationBlock go-to-posting">
+                            <span class=" postingCardLocation  go-to-posting" data-qa="ubicacion">
+                                <span>Mendoza, Ciudad</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="postingCardRow postingCardMainFeaturesBlock go-to-posting">
+                        <ul class=" postingCardMainFeatures  go-to-posting" data-qa="features">
+                            <li>
+                                <i class="postingCardIconsFeatures iconRooms"></i>
+                                4 habitaciones, 1 living
+                            </li>
+                            <li>
+                                <i class="postingCardIconsFeatures iconExteriors"></i>
+                                Posee patio? Sí o No
+                            </li>
+                            <li>
+                                <i class="postingCardIconsFeatures iconCooking"></i>
+                                Debe cocinar? Sí o no
+                            </li>
+                            <li>
+                                <i class="postingCardIconsFeatures iconLaundry"></i>
+                                Debe lavar ropa? Sí o no
+                            </li>
+                            <li>
+                                <i class="postingCardIconsFeatures iconLaundry"></i>
+                                Debe planchar? Sí o no
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="postingCardRow">
+
+                        <h2 class="postingCardTitle" data-qa="titulo">
+                            <h3>María limpiando</h3>
+                            <div class="resolucion">
+                                <img src="../static/img/Limpieza/limp7.jpg" alt="images" width="380px" height="450px" />
+                                <img src="../static/img//Limpieza/limp15.jpg" alt="images" width="380px"
+                                    height="450px" />
+                                <img src="../static/img/Limpieza/limp16.jpg" alt="images" width="380px"
+                                    height="450px" />
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="postingCardRow postingCardDescription go-to-posting" data-qa="descripcion">
+                        Descripcion escrita por María; se solicita personal capaz de asear la casa, preferentemente de
+                        jornada
+                        completa. La limpieza incluye el aseo completo
+                        del hogar, planchado y almuerzo.
+                        El pago es de $400 la hora.
+                    </div>
+                </div>
+                <br>
+ -->

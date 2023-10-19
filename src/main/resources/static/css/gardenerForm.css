@@ -1,0 +1,146 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-image: url(../img/sillonliving.jpg);
+  background-color: #017bab;
+  font-family: "Quicksand", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-position-y: center;
+  background-position-x: center; 
+  background-clip: content-box;*/
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /*   margin-top: 50px; */
+}
+/* este h3 no se usa
+ h3 {
+  margin: 0 auto;
+  list-style: none;
+  display: inline-block;
+  background-color: #4e4d4d;
+  display: inline-block;
+}*/
+
+.card {
+  color: #fefefe;
+  margin: 0 auto;
+  width: 20em;
+  background-color: #4e4d4d;
+  display: inline-block;
+  box-shadow: 0px 13px 40px #4e4d4d;
+  border-radius: 20px 20px 20px 20px;
+  padding-bottom: 30px;
+}
+
+/* #salario:active{
+  text
+} */
+
+.card h1 {
+  font-family: "Licorice", cursive;
+  font-size: 80px;
+  margin: 15px 10px;
+  font-weight: 500;
+}
+.input {
+  color: #fefefe;
+  background-color: #4e4d4d;
+  border: none;
+  font-family: Quicksand, sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  border-bottom: 2px solid #017bab;
+  width: 100%;
+  text-align: center;
+}
+
+.font {
+  color: #fefefe;
+}
+
+select {
+  color: #fefefe;
+  background-color: #4e4d4d;
+  font-size: 20px;
+  
+}
+
+.parrafo {
+  color: #fefefe3f;
+  background-color: #4e4d4d;
+  border: none;
+  font-family:Quicksand, sans-serif;
+  font-size:  20px;
+  border-bottom: 2px solid #017bab;
+  justify-content: center;
+}
+.dropdown-menu {
+  font: 20px Quicksand, sans-serif;
+  padding: 0px 10px;
+  margin-left: 10px;
+  color: #fefefe;
+  background-color: #4e4d4d;
+  text-align: left;
+  padding: 10px 0px 00px 95px;
+}
+.dropdown-menu li input {
+  transform: scale(1.2);
+}
+
+.buttons {
+  margin: 20px 0px;
+  font-size: 25px;
+  background-color: #4e4d4d;
+  width: 150px !important;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.buttons:hover {
+  margin: 20px 0px;
+  width: 100px !important;
+  background-color: #017bab;
+  color: #fefefe;
+}
+
+.volver {
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #fefefe3f;
+  font: 30px Quicksand, sans-serif;
+  text-align: right;
+  float: right;
+}
+.volver:hover {
+  color: #017bab;
+  text-decoration: underline;
+}
+
+/* .formato .input {
+      width: 150px;
+      font-size: 25px;
+      padding: 15px;
+    } */
+/* 
+    .formato .inputZona {
+      width: 250px;
+      font-size: 25px;
+      padding: 15px;
+    }
+    .formato .inputHora {
+      width: 200px;
+      font-size: 25px;
+      padding: 15px;
+    } */

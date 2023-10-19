@@ -1,0 +1,152 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  
+}
+body {
+background-image: url(../img/sillonliving.jpg);
+background-color: #017bab;
+
+font-family: "Quicksand", sans-serif;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-position-y:  center ;
+background-position-x: center;
+background-clip:content-box;
+height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+/*   margin-top: 50px; */
+}
+h3 {
+  margin: 0 auto;
+  width: 500px;
+  list-style: none;
+  display: inline-block;
+  background-color: #4e4d4d;
+  border-radius: 20px 20px 0px 0px;
+  display: inline-block;
+  }
+  .card {
+  color: #fefefe;
+  margin: 0 auto;
+  width: 550px;
+  display: block;
+  background-color: #4e4d4d;
+  display: inline-block;
+  box-shadow: 0px 13px 40px #4e4d4d;
+  border-radius: 20px 20px 20px 20px;
+  padding-bottom: 30px;
+   /*  color: #ffffff;
+    font: 50px Quicksand,sans-serif;
+    background: #F0A33130; 
+    padding: 10 px;
+    border: 2px solid #00000088;
+    border-radius: 10px; */
+  }
+  .card h1 {
+    font-family: "Licorice", cursive;
+    font-size: 80px;
+    margin: 15px 10px;
+    font-weight: 500;
+  }
+  .input  {
+    color: #fefefe;
+    background-color: #4e4d4d;
+    border: none;
+    font: 15px Quicksand, sans-serif;
+    margin: 10 px 0px 0px;
+    font-size: 30px;
+    border-bottom: 2px solid #017bab;
+    width: 400px;
+  }
+  
+  
+   .font {
+    color: #fefefe;
+  } 
+
+  select {
+    color: #fefefe;
+    background-color: #4e4d4d;
+  } 
+  .parrafo {
+    color: #fefefe;
+    background-color: #4e4d4d;
+    border: none;
+    font: 15px Quicksand, sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    text-decoration: underline #017bab;
+  
+  }
+  .dropdown-menu {
+    font: 30px Quicksand,sans-serif;
+    padding: 0px 10px;
+    margin-left: 10px;
+    color: #fefefe;
+    background-color: #4e4d4d;
+    
+  }
+  .dropdown-menu li input{
+    
+padding: 50px;
+transform: scale(2.0);
+
+  }
+  .buttons {
+    margin: 20px 0px;
+    font-size: 25px;
+    background-color: #4e4d4d;
+    width: 150px !important;
+    height: 40px;
+    border-radius: 20px;
+  }
+  
+  .buttons:hover {
+    margin: 20px 0px;
+    width: 100px !important;
+    background-color: #017bab;
+    color: #fefefe;
+  }
+
+  .volver {
+    text-decoration: none ;
+    font-size: 40px;
+    color: #fefefe3f;
+    font: 30px Quicksand,sans-serif ;
+    text-align: right;
+    float:right;
+    
+
+  }
+  .volver:hover {
+    color: #017bab;
+    text-decoration: underline;
+    
+  }
+
+  /* .formato .input {
+    width: 150px;
+    font-size: 25px;
+    padding: 15px;
+  } */
+ /* 
+  .formato .inputZona {
+    width: 250px;
+    font-size: 25px;
+    padding: 15px;
+  }
+  .formato .inputHora {
+    width: 200px;
+    font-size: 25px;
+    padding: 15px;
+  } */

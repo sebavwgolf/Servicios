@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fomulario de Registro</title>
+    <link rel="stylesheet" href="/src/main/resources/static/css/registry.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Licorice&family=Pushster&family=Quicksand:wght@300&family=Spline+Sans:wght@300&display=swap" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/83a37f8406.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-register">
+                <form  action="" method="POST" enctype="multipart/form-data">
+                    <div class="titulo">
+                        <h5>Regístrate!</h5>
+                    </div>
+                    <br />
+                    <div>
+                        <label for="email"> Email </label>
+                        <input class="controls" type="text" name="email" id="email" required />
+                    </div>
+
+                    <br />
+                    <div>
+                        <label for="clave"> Contraseña</label>
+                        <input class="controls" type="password" name="clave" id="clave" required />
+                        <span id="verclave" class="verclave"><i id="icono" class="fas fa-eye"></i></span>
+                    </div>
+                    <div>
+                        <label for="clave"> Confirmar contraseña</label>
+                        <input class="controls" type="password" name="clave" id="clave" required />
+                        <span id="verclave" class="verclave"><i id="icono" class="fas fa-eye"></i></span>
+                    </div>
+
+                    <br />
+                    <div>
+                        <label for="nombre"> Nombre</label>
+                        <input class="controls" type="text" name="firstName" id="nombre" required />
+                    </div>
+
+                    <br />
+                    <div>
+                        <label for="apellido"> Apellido</label>
+                        <input class="controls" type="text" name="lastName" id="apellido" required />
+                    </div>
+
+                    <br />
+                    <div>
+                        <label for="fechaNacimiento"> Fecha de Nacimiento</label>
+                        <input class="controls" type="date" name="dob" id="fechaNacimiento" required />
+                    </div>
+
+                    <br />
+                    <div>
+                        <label for="DNI"> DNI</label>
+                        <input class="controls" type="text" name="dni" id="DNI" required />
+                    </div>
+
+                    <br />
+                    <div>
+                        <label for="foto">Foto de Perfil</label>
+                        <input type="file" name="photo" id="foto" />
+                        <!-- <input type="submit" name="photo" value="Enviar imagen" /> -->
+                    </div>
+                    <br />
+                    <div>
+                        <label for="dirección">Dirección</label>
+                        <input class="controls" type="text" name="adress" id="dirección" required />
+                    </div>
+                        <div class="departamento">
+                            <label for="departamento"> Departamento </label>
+                            <select name="departamentos" id="deptartamento">
+                                <option value="Capital">Capital</option>
+                                <option value="General Alvear">General Alvear</option>
+                                <option value="San Martín">San Martín</option>
+                                <option value="Godoy Cruz">Godoy Cruz</option>
+                                <option value="Guaymallén">Guaymallén</option>
+                                <option value="Junín">Junín</option>
+                                <option value="La Paz">La Paz</option>
+                                <option value="Las Heras">Las Heras</option>
+                                <option value="Lavalle">Lavalle</option>
+                                <option value="Luján de Cuyo">Luján de Cuyo</option>
+                                <option value="Maipú">Maipú</option>
+                                <option value="Malargüe">Malargüe</option>
+                                <option value="Rivadavia">Rivadavia</option>
+                                <option value="San Carlos">San Carlos</option>
+                                <option value="San Rafael">San Rafael</option>
+                                <option value="Santa Rosa">Santa Rosa</option>
+                                <option value="Tunuyán">Tunuyán</option>
+                                <option value="Tupungato">Tupungato</option>
+                            </select>
+                        </div>
+                    <br />
+                    <div>
+                        <label for="teléfono"> Teléfono</label>
+                        <input class="controls" type="tel" name="phone" id="teléfono" placeholder="(Código de área)Número"
+                            required />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="cv"> Curriculum Vitae</label>
+                        <input type="file" name="cv" id="cv" />
+                        <!-- <input type="submit" name="cv" value="Enviar Curriculum" /> -->
+                    </div>
+                        <div class="textarea">
+                            <textarea name="descripcion" id="" cols="70" rows="5" placeholder="Descripción"></textarea>
+                        </div>
+                    <br>
+                    <p>Estoy de acuerdo con los <a href="#"> Terminos y Condiciones</a></p>
+                    <input class="botons" type="submit" value="Registrar" />
+                    <p>
+                        <a href="/src/main/resources/templates/login.html">¡Ya tengo Cuenta!</a>
+                    </p>
+                </form>
+        </div>
+    </div>
+<script src="/src/main/resources/static/js/main.js"></script>
+</body>
+
+</html>

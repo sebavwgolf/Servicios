@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/filtrosPrueba.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+var current = 0;
+var imagenes = new Array();
+ 
+$(document).ready(function() {
+    var numImages = 6;
+    if (numImages <= 3) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+ 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    });
+ 
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    }); 
+ });
+</script>
+</head>
+<body>
+    <div id="carrusel">
+        <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+        <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+        <div class="carrusel">
+            <div class="product" id="product_0">
+                <img src="gallery/01.jpg" width="195" height="100" />
+                <h5>Lorem ipsum 1</h5>
+                <p>165.00 €</p>
+            </div>
+            <div class="product" id="product_1">
+                <img src="gallery/02.jpg" width="195" height="100" />
+                <h5>Lorem ipsum 2</h5>
+                <p>100.00 €</p>
+            </div>
+            <div class="product" id="product_2">
+                <img src="gallery/03.jpg" width="195" height="100" />
+                <h5>Lorem ipsum 3</h5>
+                <p>250.00 €</p>
+            </div>
+            <div class="product" id="product_3">
+                <img src="gallery/01.jpg" width="195" height="100" />
+                <h5>Lorem ipsum 4</h5>
+                <p>75.00 €</p>
+            </div>
+            <div class="product" id="product_4">
+                <img src="gallery/02.jpg" width="195" height="100" />
+                <h5>Lorem ipsum 5</h5>
+                <p>65.00 €</p>
+            </div>
+            <div class="product" id="product_5">
+                <img src="gallery/03.jpg" width="195" height="100" />
+                <h5>Lorem ipsum 6</h5>
+                <p>40.00 €</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

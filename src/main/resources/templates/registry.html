@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario Login</title>
+  <link rel="stylesheet" href="/src/main/resources/static/css/login.css" />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Licorice&family=Pushster&family=Quicksand:wght@300&family=Spline+Sans:wght@300&display=swap" />
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/83a37f8406.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-register">
+      <form class="formClass" action="" method="POST" enctype="multipart/form-data">
+        <div class="titulo">
+          <h5>Regístrate!</h5>
+        </div>
+        <div>
+          <label for="email"></label>
+          <input class="controls" type="text" name="email" id="email" placeholder="nombre@email.com" required />
+        </div>
+
+        <div>
+          <label for="clave"> </label>
+          <input class="controls" type="password" name="clave" id="clave" placeholder="Password" required />
+        </div>
+        <span id="verclave" class="verclave"><i id="icono" class="fas fa-eye"></i></span>
+        <div>
+          <label for="clave"> </label>
+          <input class="controls" type="password" name="clave" id="clave" placeholder="Password" required />
+        </div>
+        <span id="verclave" class="verclave"><i id="icono" class="fas fa-eye"></i></span>
+        <div>
+          <label for="nombre"></label>
+          <input class="controls" type="text" name="firstName" id="nombre" placeholder="Nombre" required />
+        </div>
+        <div>
+          <label for="apellido"></label>
+          <input class="controls" type="text" name="lastName" id="apellido" placeholder="Apellido" required />
+        </div>
+        <div>
+          <label for="fechaNacimiento"></label>
+          <input class="controls" type="text" name="dob" id="fechaNacimiento"
+            placeholder="Toca para poner tu fecha de nacimiento" onfocus="(this.type='date')" />
+        </div>
+        <div>
+          <label for="DNI"></label>
+          <input class="controls" type="text" name="dni" id="DNI" placeholder="Documento" required />
+        </div>
+        <div>
+          <label for="foto"></label>
+          <title>foto</title>
+          <input class="controls" type="text" name="photo" id="foto" placeholder="Foto de perfil"
+            onfocus="(this.type='file')" />
+          <!-- <input type="submit" name="photo" value="Enviar imagen" /> -->
+        </div>
+        <div>
+          <label for="dirección"></label>
+          <input class="controls" type="text" name="adress" id="dirección" placeholder="Dirección" required />
+        </div>
+        <div class="departamento">
+          <label for="departamento"> </label>
+          <select name="departamentos" id="deptartamento">
+            <option value="Departamento">Elija su departamento</option>
+            <option value="Capital">Capital</option>
+            <option value="General Alvear">General Alvear</option>
+            <option value="San Martín">San Martín</option>
+            <option value="Godoy Cruz">Godoy Cruz</option>
+            <option value="Guaymallén">Guaymallén</option>
+            <option value="Junín">Junín</option>
+            <option value="La Paz">La Paz</option>
+            <option value="Las Heras">Las Heras</option>
+            <option value="Lavalle">Lavalle</option>
+            <option value="Luján de Cuyo">Luján de Cuyo</option>
+            <option value="Maipú">Maipú</option>
+            <option value="Malargüe">Malargüe</option>
+            <option value="Rivadavia">Rivadavia</option>
+            <option value="San Carlos">San Carlos</option>
+            <option value="San Rafael">San Rafael</option>
+            <option value="Santa Rosa">Santa Rosa</option>
+            <option value="Tunuyán">Tunuyán</option>
+            <option value="Tupungato">Tupungato</option>
+          </select>
+        </div>
+        <div>
+          <label for="teléfono"> </label>
+          <input class="controls" type="tel" name="phone" id="teléfono" placeholder="(Código de área)Número" required />
+        </div>
+        <div>
+          <label for="cv"></label>
+          <input class="controls" type="text" name="cv" id="cv" placeholder="Toca para adjuntar tu curriculum"
+            onfocus="(this.type='file')" />
+        </div>
+        <div class="terms">
+          <p>
+            Estoy de acuerdo con los
+            <a class="terms-link" href="#"> Terminos y Condiciones</a>
+            <input type="checkbox" name="terms" id="" />
+          </p>
+        </div>
+
+        <input class="buttons" type="submit" name="" value="Ingresar" />
+        <div>
+          <a class="tengocuenta" href="/src/main/resources/templates/login.html">¡Ya tengo Cuenta!</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/src/main/resources/static/js/main.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="container formulariologin active" id="formulariologin">
+  <div class="form-register">
+
+
+    <div class="container formularioregistro" id="formularioregistro">
+      <div class="form-register">
+
+      </div>
+    </div> -->
+
+<!-- <section class="form-login">
+    <h5>Login</h5>
+    <form action="POST">
+      <input class="controls" type="text" name="usuario" value="" placeholder="Usuario" required />
+      <div class="pass-container">
+        <input id="clave" class="controls" type="password" name="password" value="" placeholder="Contraseña" required />
+        <span id="verclave" class="verclave"><i id="icono" class="fas fa-eye"></i></span>
+      </div>
+      <input class="buttons" type="submit" name="" value="Ingresar" />
+      <div>
+        <a href="#" class="pass"> Olvidaste tu Contraseña</a>
+        <a href="/src/main/resources/templates/formularioRegistro.html">Registrate!</a>
+      </div>
+    </form>
+  </section> -->

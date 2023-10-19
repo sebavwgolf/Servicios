@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardinero</title>
+    <link rel="stylesheet" href="../static/css/gardenerForm.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Licorice&family=Pushster&family=Quicksand:wght@300&family=Spline+Sans:wght@300&display=swap" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/83a37f8406.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Jardinero</h1>
+            <!--<img src="/src/main/resources/static/img/jardin.jpg" alt="imagen" />-->
+            <!--<img src="../static/img/Jardìn/j14.jpg" alt="images" width="300" />-->
+            <form class="formato" action="/gardenerForm" method="POST">
+                <div>
+                    <label class="titulo" for="salario"></label>
+                    <input class="input font" type="text" size="50px" name="salary" id="salario"
+                        placeholder="Remuneración Pretendida">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="titulo" for="zona"> </label>
+                    <select class="input" name="workingZone" id="zona">
+                        <option value="Zona Laboral">Zona Laboral </option>
+                        <option value="Capital">Capital </option>
+                        <option value="General Alvear">General Alvear </option>
+                        <option value="San Martín">San Martín </option>
+                        <option value="Godoy Cruz">Godoy Cruz </option>
+                        <option value="Guaymallén">Guaymallén </option>
+                        <option value="Junín">Junín </option>
+                        <option value="La Paz">La Paz </option>
+                        <option value="Las Heras">Las Heras </option>
+                        <option value="Lavalle">Lavalle</option>
+                        <option value="Luján de Cuyo">Luján de Cuyo</option>
+                        <option value="Maipú">Maipú</option>
+                        <option value="Malargüe">Malargüe </option>
+                        <option value="Rivadavia">Rivadavia </option>
+                        <option value="San Carlos">San Carlos </option>
+                        <option value="San Rafael">San Rafael </option>
+                        <option value="Santa Rosa">Santa Rosa </option>
+                        <option value="Tunuyán">Tunuyán </option>
+                        <option value="Tupungato">Tupungato </option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="dias"></label>
+                    <p class="parrafo"> Días Laborales </p>
+                    <ul class="dropdown-menu" id="myDiv">
+                        <li>
+                            <input type="checkbox" value="Lunes"> Lunes
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Martes"> Martes
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Miércoles"> Miércoles
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Jueves"> Jueves
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Viernes"> Viernes
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Sábado"> Sábado
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Domingo"> Domingo
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="titulo" for="hora"></label>
+                    <input class="input font" type="text" name="timeFrom" id="hora" placeholder="Hora de incio"
+                        onfocus="(this.type='time')">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="titulo" for="hora"></label>
+                    <input class="input font" type="text" id="hora" name="timeTo" placeholder="Hora de finalización"
+                        onfocus="(this.type='time')">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="tamaño"></label>
+                    <select class="input" name="surface" id="tamaño">
+                        <option value="tamaño">Tamaño del jardín </option>
+                        <option value="pequeño">Pequeño (Hasta 150 m2) </option>
+                        <option value="mediano">Mediano (Hasta 300 m2)</option>
+                        <option value="grande">Grande (Más de 300 m2)</option>
+                        <option value="indistinto">Indistinto </option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="herramientas"></label>
+                    <p class="parrafo"> ¿Poseé herramientas de jardinería?</p>
+                    <ul class="dropdown-menu" id="herramientas">
+                        <li>
+                            <input type="checkbox" value="Si"> Si
+                        </li>
+                        <li>
+                            <input type="checkbox" value="No"> No
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="piscina"></label>
+                    <p class="parrafo"> ¿Realiza limpieza de piscinas?</p>
+                    <ul class="dropdown-menu" id="piscina">
+                        <li>
+                            <input type="checkbox" value="Si"> Si
+                        </li>
+                        <li>
+                            <input type="checkbox" value="No"> No
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="cerco"></label>
+                    <p class="parrafo"> ¿Corta cercos verdes?</p>
+                    <ul class="dropdown-menu" id="cerco">
+                        <li>
+                            <input type="checkbox" value="Si"> Si
+                        </li>
+                        <li>
+                            <input type="checkbox" value="No"> No
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label class="input" for="desinfección"></label>
+                    <p class="parrafo"> ¿Realiza desinfección de plantas?</p>
+                    <ul class="dropdown-menu" id="desinfección">
+                        <li>
+                            <input type="checkbox" value="Si"> Si
+                        </li>
+                        <li>
+                            <input type="checkbox" value="No"> No
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <button class="buttons"> Enviar </button>
+            </form>
+            <a class="volver" href="">Volver</a>
+        </div>
+        <div class="relleno">
+
+        </div>
+
+
+</body>
+
+</html>

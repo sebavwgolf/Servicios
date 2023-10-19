@@ -1,0 +1,196 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+background-image: url(../img/sillonliving.jpg);
+  background-color: #017bab;
+  margin-top: 50px;
+  font-family: "Quicksand", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: ;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.menu ul {
+  list-style: none;
+  display: inline-block;
+  background-color: #4e4d4d;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  color: #fefefe;
+  display: inline-block;
+  padding: 25.7px;
+  text-decoration: none;
+  font-family: "Licorice", cursive;
+  font-size: 45px;
+}
+
+.menu ul li a:hover {
+  background-color: #017bab;
+  color: #4e4d4d;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.menu li a:hover {
+  box-shadow: -0px -13px 40px #4e4d4d;
+}
+
+.form-login {
+  margin: 0 auto;
+  width: 400px;
+  display: block;
+  background-color: #4e4d4d;
+  display: inline-block;
+  box-shadow: 0px 13px 40px #4e4d4d;
+  border-radius: 20px 20px 20px 20px;
+  padding-bottom: 30px;
+}
+
+.form-register {
+  margin: 0 auto;
+  width: 400px;
+  display: block;
+  background-color: #4e4d4d;
+  display: inline-block;
+  box-shadow: 0px 13px 40px #4e4d4d;
+  border-radius: 20px 20px 20px 20px;
+  padding-bottom: 30px;
+}
+
+.formClass {
+  color: #fefefe;
+  justify-content: center;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.titulo h5 {
+  font-size: 50px;
+  font-family: "Licorice", cursive;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.formClass input {
+  width: 80%;
+}
+
+.formClass [type="password"] {
+  width: 300px;
+}
+
+.form-login {
+  display:;
+}
+
+.form-register {
+  display: ;
+}
+
+.controls {
+  width: 100%;
+  /* border: 1px solid #017bab; */
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #4e4d4d;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  color: #fefefe;
+  border: none;
+  border-bottom: 2px solid #017bab;
+}
+
+.controls :active {
+  width: 100%;
+  border: 2px solid #017bab;
+  border-radius: 50%;
+  background: #252323;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.buttons {
+  margin: 20px 0px;
+  background-color: #4e4d4d;
+  width: 120px !important;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.buttons:hover {
+  margin: 20px 0px;
+  width: 100px !important;
+  background-color: #017bab;
+  color: #fefefe;
+}
+
+.pass {
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.pass:hover {
+  color: #017bab;
+  border-bottom: 2px solid #017bab;
+  padding: 2px;
+}
+
+.terms {
+  font-size: 13px;
+  justify-content: left;
+
+}
+
+.terms-link {
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.terms-link:hover {
+  color: #017bab;
+  border-bottom: 2px solid #017bab;
+  padding: 2px;
+}
+
+.tengocuenta {
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.tengocuenta:hover {
+  color: #017bab;
+  border-bottom: 2px solid #017bab;
+  padding: 2px;
+}
+
+.form-register textarea {
+  resize: none;
+}

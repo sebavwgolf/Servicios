@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario Login</title>
+  <link rel="stylesheet" href="/src/main/resources/static/css/login.css" />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Licorice&family=Pushster&family=Quicksand:wght@300&family=Spline+Sans:wght@300&display=swap" />
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/83a37f8406.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="form-login">
+      <form class="formClass" action="" method="POST" enctype="multipart/form-data">
+        <div class="titulo">
+          <h5>Login</h5>
+        </div>
+        <br />
+        <div>
+          <!-- <label for="email"> Email </label> -->
+          <input class="controls" type="text" name="email" id="email" placeholder="Usuario" required />
+        </div>
+        <br />
+        <div>
+          <label for="clave"> </label>
+          <input class="controls" type="password" name="clave" id="clave" placeholder="Password" required />
+        </div>
+        <span id="verclave" class="verclave"><i id="icono" class="fas fa-eye"></i></span>
+        <div>
+          <input class="buttons" type="submit" name="" value="Ingresar" />
+        </div>
+        <div>
+          <a href="#" class="pass"> Olvidaste tu Contraseña</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <script src="/src/main/resources/static/js/main.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="container formulariologin active" id="formulariologin">
+  <div class="form-register">
+
+
+    <div class="container formularioregistro" id="formularioregistro">
+      <div class="form-register">
+
+      </div>
+    </div> -->
+
+<!-- <section class="form-login">
+    <h5>Login</h5>
+    <form action="POST">
+      <input class="controls" type="text" name="usuario" value="" placeholder="Usuario" required />
+      <div class="pass-container">
+        <input id="clave" class="controls" type="password" name="password" value="" placeholder="Contraseña" required />
+        <span id="verclave" class="verclave"><i id="icono" class="fas fa-eye"></i></span>
+      </div>
+      <input class="buttons" type="submit" name="" value="Ingresar" />
+      <div>
+        <a href="#" class="pass"> Olvidaste tu Contraseña</a>
+        <a href="/src/main/resources/templates/formularioRegistro.html">Registrate!</a>
+      </div>
+    </form>
+  </section> -->

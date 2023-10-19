@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  background-color: #017bab;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.form-register {
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  background: #4e4d4d;
+  margin: auto;
+  box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  border-bottom: 4px solid #017bab;
+  color: white;
+  border-radius: 15px;
+  margin-top: 50px;
+  justify-content: flex-start;
+}
+
+.form-register form{
+    margin: 20px;
+}
+
+.textarea {
+  width: auto;
+  margin: 0px 10px;
+  padding-top: 5px;
+}
+
+.form-register input{
+  width: 250px;
+}
+
+.departamento {
+  flex: auto;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+.form-register input {
+  color: white;
+}
+
+.form-login h5 {
+  font-family: "Licorice", cursive;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #017bab;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.titulo {
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-register h5 {
+  font-family: "Licorice", cursive;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #017bab;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.controls {
+  width: 40%;
+  border: 1px solid #017bab;
+  margin-bottom: 5px;
+  padding: 5px 5px;
+  background: #252323;
+  font-size: 14px;
+  font-weight: bold;
+  float: inline-start;
+}
+.buttons {
+  width: 100%;
+  height: 40px;
+  background: #017bab;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.buttons :hover {
+  padding: 2px;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.form-login div {
+  text-align: center;
+}
+
+.form-login a {
+  /* border-bottom: 1px solid; */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-login a:hover {
+  padding: 2px;
+  border-bottom: 2px dotted #cfe7d6;
+}
+
+.form-login input {
+  color: #ffffff;
+}
+
+.controls {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+}
+
+div a {
+  display: block;
+}
+
+.verclave {
+  font-size: 30px;
+  justify-content: baseline;
+  padding: 0 10px;
+}
