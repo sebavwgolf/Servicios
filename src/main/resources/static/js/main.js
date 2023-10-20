@@ -1,12 +1,12 @@
-let verclave=document.getElementById("verclave");
-let clave=document.getElementById("clave")
-let icono=document.getElementById("icono")
-let con=true
+//let verclave=document.getElementById("verclave");
+//let clave=document.getElementById("clave")
+//let icono=document.getElementById("icono")
+//let con=true
 
-let iniciaSesion = document.querySelector('.iniciaSesion')
-let registrate = document.querySelector('.registrate')
-let formulariologin = document.querySelector('.formulariologin')
-let formularioregistro = document.querySelector('.formularioregistro')
+//let iniciaSesion = document.querySelector('.iniciaSesion')
+//let registrate = document.querySelector('.registrate')
+//let formulariologin = document.querySelector('.formulariologin')
+//let formularioregistro = document.querySelector('.formularioregistro')
 
 verclave.addEventListener('click', function(){
 
